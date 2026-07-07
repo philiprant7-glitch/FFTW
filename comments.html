@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback — Fangirl For The Week</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600;700&family=Shrikhand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Fangirl For The Week</h1>
+      <p class="site-subtitle">Relearning who I am through the very thing that made me</p>
+      <a href="index.html" class="feedback-button">&larr; Back to Blog</a>
+    </div>
+  </header>
+
+  <div class="page-container">
+    <main class="post-content suggestion-page">
+      <h1>Feedback &amp; Suggestions</h1>
+      <p>Got a suggestion, an artist recommendation, or some constructive criticism? Drop it below — only I'll see it.</p>
+
+      <form action="https://formspree.io/f/xjgqdyez" method="POST" class="suggestion-form">
+        <label for="name">Name (optional)</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Fangirl For The Week.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
