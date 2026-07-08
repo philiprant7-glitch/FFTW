@@ -411,3 +411,70 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
 .site-title-link:hover {
   transform: scale(1.08) rotate(-2deg);
 }
+
+/* ---------- Mobile responsiveness ---------- */
+@media (max-width: 768px) {
+
+  .site-title {
+    font-size: 1.8rem;
+  }
+
+  .header-inner {
+    padding: 70px 20px 20px;
+  }
+
+  .feedback-button {
+    top: 16px;
+    right: 12px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .page-container {
+    padding: 24px 16px 0;
+  }
+
+  /* Stack video, description, and post list vertically */
+  .post-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .video-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-placeholder {
+    width: 220px;
+  }
+
+  .video-description {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .post-feed {
+    width: 100%;
+  }
+
+  /* Stack the artist photos instead of squeezing them side by side */
+  .photo-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .photo-row img {
+    height: 160px;
+  }
+
+  .about-section,
+  .fangroup-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+}
