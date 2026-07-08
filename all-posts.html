@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feedback — Fangirl For The Week</title>
+  <title>All Posts — Fangirl For The Week</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600;700&family=Shrikhand&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
@@ -19,19 +19,19 @@
   </header>
 
   <div class="page-container">
-    <main class="post-content suggestion-page">
-      <h1>Feedback &amp; Suggestions</h1>
-      <p>Got a suggestion, an artist recommendation, or some constructive criticism? Drop it below — only I'll see it.</p>
+    <main class="all-posts-page">
+      <h2 class="section-heading">All Posts</h2>
 
-      <form action="https://formspree.io/f/xjgqdyez" method="POST" class="suggestion-form">
-        <label for="name">Name (optional)</label>
-        <input type="text" id="name" name="name" />
+      <div class="post-feed post-feed-full">
+        <a class="feed-item" href="posts/first-post.html">🎵 Starting This Blog</a>
+        <a class="feed-item" href="https://fangirlfortheweek.substack.com/p/welcome-to-fangirl-for-the-week" target="_blank" rel="noopener noreferrer">🎵 Welcome to Fangirl For The Week</a>
+        <a class="feed-item" href="#" target="_blank" rel="noopener noreferrer">🎵 Post Title Coming Soon</a>
 
-        <label for="message">Your message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <!-- Copy the line above to add more posts.
+             Own site posts: href="posts/filename.html" (no target="_blank")
+             Substack posts: href="https://your-substack-url" target="_blank" rel="noopener noreferrer" -->
 
-        <button type="submit">Send</button>
-      </form>
+      </div>
     </main>
 
     <footer class="site-footer">

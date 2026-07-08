@@ -26,23 +26,27 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
 .site-header {
   width: 100%;
   border-bottom: 3px solid #96d9ff;
-  background-color: #fff;
+  background-color: #fff5f8;
+  position: relative;
 }
 
 .header-inner {
   max-width: 700px;
   margin: 0 auto;
-  padding: 48px 140px 24px;
-  position: relative;
+  padding: 48px 20px 24px;
   text-align: center;
 }
 
 .site-title {
   font-family: "Shrikhand", cursive;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   letter-spacing: -0.5px;
   display: inline-block;
   position: relative;
+  color: #d64d78;
+  -webkit-text-stroke: 1.5px #5cb8e8;
+  text-stroke: 1.5px #5cb8e8;
+  white-space: nowrap;
 }
 
 .site-title::after {
@@ -195,12 +199,7 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
   margin-bottom: 12px;
 }
 
-.about-section h2::before,
-.about-section h2::after {
-  content: "💗";
-  font-size: 1.2rem;
-  margin: 0 10px;
-}
+
 
 .about-section p {
   color: #444;
@@ -236,11 +235,12 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .photo-row img:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------- Fangroup section ---------- */
@@ -266,10 +266,14 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
   text-decoration: none;
   border-radius: 6px;
   font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .feedback-button-large:hover {
   background-color: #f296ae;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------- Individual post page ---------- */
@@ -380,4 +384,30 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
 .view-post-button-wrap {
   text-align: center;
   margin-bottom: 40px;
+}
+
+.all-posts-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.post-feed-full {
+  width: 100%;
+}
+
+.post-feed-full .feed-item {
+  font-size: 1.1rem;
+  padding: 16px 0;
+}
+
+.site-title-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.site-title-link:hover {
+  transform: scale(1.08) rotate(-2deg);
 }
