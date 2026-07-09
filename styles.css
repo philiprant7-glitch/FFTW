@@ -415,6 +415,16 @@ cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" wid
 /* ---------- Mobile responsiveness ---------- */
 @media (max-width: 768px) {
 
+  .social-links {
+    position: static;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .social-links-icons {
+    justify-content: center;
+  }
+
   .site-title {
     font-size: 1.8rem;
   }
